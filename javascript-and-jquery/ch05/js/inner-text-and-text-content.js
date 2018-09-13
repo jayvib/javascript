@@ -1,6 +1,6 @@
 var firstItem = document.getElementById("one");
 var showTextContent = firstItem.textContent;
-var showInnerText = firstitem.innerText;
+var showInnerText = firstItem.innerText;
 
 var msg = "<p>TextContent: " + showTextContent + "</p>";
 msg += "<p>innerText: " + showInnerText + "</p>";
