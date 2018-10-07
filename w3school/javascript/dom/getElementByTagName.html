@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM</title>
+</head>
+<body>
+  <h2>Finding HTML Elements by Tag Name</h2>
+  <div id="main">
+    <p>The DOM is very useful.</p>
+    <p>This example demonstrates the <b>getElementsByTagNem</b> method.</p>
+    <p id="demo"></p>
+  </div>
+  <script>
+    var x = document.getElementById('main'); // get the object that has an id 'main'
+    var y = x.getElementsByTagName('p'); // inside the main... get all the object that has tag <p>
+    document.getElementById('demo').innerHTML =
+        'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML; // get the object that has an ID 'demo'
+  </script>
+</body>
+</html>
